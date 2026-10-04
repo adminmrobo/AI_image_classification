@@ -29,7 +29,7 @@
 ## 파일
 
 ```
-index.html                 시리즈 목록
+index.html                 시리즈 첫 화면 (긴급 미션 브리핑과 미션 네 개)
 4-1_bream_smelt.html       도미 vs 빙어
 4-2_cat_human.html         고양이 vs 사람
 4-3_cat_dog.html           고양이 vs 강아지
