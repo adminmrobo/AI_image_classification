@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI는 이미지를 어떻게 구분할까? — 전체 목록</title>
+<meta name="description" content="도미와 빙어, 고양이와 사람, 고양이와 강아지, 치와와와 머핀. 네 가지 분류 문제로 이미지 분류를 처음부터 따라가는 인터랙티브 해설 시리즈">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#13141f;--panel:#1c1e2d;--panel2:#25283a;--rule:#363a52;--text:#eceaf3;--muted:#9d9bb8;--gfp:#5ee39c;--eye:#f0604d;--info:#82b8ff;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;line-height:1.7}
+.wrap{max-width:1000px;margin:0 auto;padding:56px clamp(16px,4vw,32px) 40px}
+.kicker{color:var(--eye);font-weight:700;font-size:15px}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:8px 0 14px;word-break:keep-all}
+.lede{color:#c9c6da;font-size:18px;max-width:68ch;word-break:keep-all}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:32px}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--rule);border-radius:14px;padding:20px 22px;transition:border-color .15s}
+a.card:hover,a.card:focus-visible{border-color:var(--gfp);outline:none}
+.no{display:inline-block;font-weight:700;color:#13141f;background:var(--gfp);border-radius:999px;padding:1px 12px;font-size:14px}
+.card h2{font-size:22px;margin:10px 0 6px;word-break:keep-all}
+.card p{margin:0;color:var(--muted);font-size:15px;word-break:keep-all}
+.card .lv{margin-top:10px;font-size:13.5px;color:var(--info)}
+footer{border-top:1px solid var(--rule);margin-top:40px;padding-top:18px;color:var(--muted);font-size:14px}
+footer a{color:var(--info)}
+@media (max-width:720px){.grid{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="kicker">글 · 안상선 ((주)M-Robo 대표)</div>
+  <h1>AI는 이미지를 어떻게 구분할까?</h1>
+  <p class="lede">네 가지 분류 문제로 이미지 분류를 처음부터 따라갑니다. 이름 있는 변수로 가르는 물고기에서 출발해, 사진이 숫자 행렬이 되는 과정, 필터와 CNN, 그리고 사람도 헷갈리는 치와와와 머핀까지. 각 편에는 직접 만져 보는 실습과 Colab 코드가 들어 있습니다.</p>
+  <div class="grid">
+    <a class="card" href="4-1_bream_smelt.html"><span class="no">4-1</span><h2>도미 vs 빙어</h2><p>변수와 특징, 무엇이 다를까. 규칙·퍼셉트론·SVM·k-NN과 표준화.</p><div class="lv">표 데이터 · 분류의 기본</div></a>
+    <a class="card" href="4-2_cat_human.html"><span class="no">4-2</span><h2>고양이 vs 사람</h2><p>사진은 숫자 행렬이다. 픽셀, 픽셀 거리의 함정, 합성곱과 필터, 사람이 정한 특징.</p><div class="lv">픽셀 · 합성곱</div></a>
+    <a class="card" href="4-3_cat_dog.html"><span class="no">4-3</span><h2>고양이 vs 강아지</h2><p>층을 쌓아 좌표를 바꾼다. 분류 경계, CNN 구조, 소프트맥스, 데이터 증강과 Attentive CutMix.</p><div class="lv">CNN · 학습 · 데이터 증강</div></a>
+    <a class="card" href="4-4_chihuahua_muffin.html"><span class="no">4-4</span><h2>치와와 vs 머핀</h2><p>저수준 특징은 속고 고수준 특징이 가른다. 해상도, 픽셀 규칙 대 패턴, 모델이 틀리는 방식.</p><div class="lv">특징의 수준 · 모델의 한계</div></a>
+  </div>
+  <footer>
+    <p>물고기 데이터로 하는 머신러닝은 <a href="https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/" target="_blank" rel="noopener">「Fish Market Data로 쉽게 따라하는 머신러닝」</a>에서 자세히 다룹니다.</p>
+    <p>이 저작물은 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ko" target="_blank" rel="license noopener">CC BY-NC 4.0</a>으로 공개합니다. 비상업적 목적에 한해 자유롭게 공유하고 고쳐 쓸 수 있으며, 출처는 반드시 표기해야 합니다.</p>
+  </footer>
+</main>
+</body>
+</html>
